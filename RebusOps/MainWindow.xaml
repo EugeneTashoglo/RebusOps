@@ -1,0 +1,35 @@
+﻿<Window x:Class="RebusOps.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RebusOps"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="402" Width="558">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="181*"/>
+            <ColumnDefinition Width="344*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="0" Margin="20,20,86,0">
+            <Button Content="Add Image" Click="AddImageButton_Click"/>
+            <Button Content="Save Rebus" Click="saveImageButton_Click" />
+            <Button Content="Delete Rebus"  />
+        </StackPanel>
+        <StackPanel Grid.ColumnSpan="2">
+            <Image x:Name="rebusImage" Width="249" Margin="300 20 20 20" Height="252"/>
+
+        </StackPanel>
+        <ListBox Name="imageListBox" Margin="10,118,10,10" SelectionChanged="imageListBox_SelectionChanged" />
+        <TextBox Name="imageDescriptionTextBox" Margin="10,350,10,10" IsReadOnly="True" />
+     
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>
